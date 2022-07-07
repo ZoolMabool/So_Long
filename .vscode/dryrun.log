@@ -1,0 +1,21 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/nfs/homes/ybaudoui/Documents/Git hub Yan/Cursus 42/so_long'
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c move.c -o move.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c main.c -o main.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c size_map.c -o size_map.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c texture_map.c -o texture_map.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c check_map.c -o check_map.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c put_perso.c -o put_perso.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c put_chest.c -o put_chest.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c event.c -o event.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c put_chest_empty.c -o put_chest_empty.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c check_event_a_d.c -o check_event_a_d.o
+ 
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c file_to_image.c -o file_to_image.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c check_event_w_s.c -o check_event_w_s.o
+gcc -Wall -Wextra -Werror -Ilibft -Imlx_linux -Llibft -lft -g -c check_error.c -o check_error.o
+make -sC libft
+make -sC mlx_linux
+gcc -Llibft -Lmlx_linux move.o main.o size_map.o texture_map.o check_map.o put_perso.o put_chest.o event.o put_chest_empty.o check_event_a_d.o file_to_image.o check_event_w_s.o check_error.o -o so_long -lm -lmlx -lXext -lX11 -g -Llibft -lft
+make: Leaving directory '/nfs/homes/ybaudoui/Documents/Git hub Yan/Cursus 42/so_long'
+ 
